@@ -3,6 +3,15 @@ FaceTunes is a web application that utilizes facial expression recognition techn
 
 <img width="293" alt="Screenshot 2023-06-12 215224" src="https://github.com/Ayushlion/FaceTunes/assets/122682367/45770598-eca1-4e2c-850d-d284b6bb9a1c">
 
+# How to Use 
+First intall requirements.txt file
+```shell
+pip install -r requirements.txt
+```
+Run the app.py
+```shell
+flask run
+```
 # Features
 Facial Expression Recognition: FaceTunes uses advanced computer vision algorithms to analyze the user's facial expressions in real-time, accurately detecting their emotional state.
 Sentiment Analysis: The application applies sentiment analysis techniques to interpret the detected facial expressions and determine the user's mood.
