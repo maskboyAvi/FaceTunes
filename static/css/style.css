@@ -279,6 +279,9 @@ a:focus {
 }
 
 /* end slider section */
+.about--height{
+  height: 400px;
+}
 .about--col{
   background-color: #cecaca;
 }

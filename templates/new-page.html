@@ -30,7 +30,7 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
     <!-- responsive style -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" " />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" />
 </head>
 
 <body id="vid--body">
@@ -38,57 +38,63 @@
         <source src="{{ url_for('static', filename='videos/design_-_48420 (1080p).mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-  <div>
-    <!-- header section strats -->
-    <header class="header_section">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-                <a class="navbar-brand mr-5" href="index.html">
-                    <img src="images/logo.png" alt="">
-                    <span>
-                        FaceTunes
-                    </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                        <ul class="navbar-nav  ">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html"> About </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#service--section"> Service </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact us</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline">
-                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                        </form>
+    <div>
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                    <a class="navbar-brand mr-5" href="{{ url_for('index') }}">
+                        <img src="/static/images/logo.png" alt="">
+                        <span>
+                            FaceTunes
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{ url_for('index') }}">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('about') }}"> About </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('index') }}"> Service </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ url_for('contact') }}">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- end header section -->
-    
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
         <section class="main--section">
             <div id="video-container">
                 <div class="loader"></div>
             </div>
         </section>
-    <!-- <script> -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    </body>
+        <!-- footer section -->
+        <section class="container-fluid footer_section">
+            <p>
+                <a href="{{ url_for('index') }}">&copy; Team : Celebi</a>
+            </p>
+        </section>
+        <!-- footer section -->
+        <!-- <script> -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
 
 </html>

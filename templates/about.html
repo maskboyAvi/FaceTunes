@@ -23,14 +23,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="css/stylesheet">
   <!-- Custom styles for this template -->
-  <link href="../static/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
   <!-- responsive style -->
-  <link href="../static/css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}"  />
 </head>
 
 <body class="sub_page">
@@ -39,8 +39,8 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand mr-5" href="index.html">
-            <img src="images/logo.png" alt="">
+          <a class="navbar-brand mr-5" href="{{ url_for('index') }}">
+            <img src="/static/images/logo.png" alt="">
             <span>
               FaceTunes
             </span>
@@ -52,22 +52,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="about.html"> About </a>
+                  <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#service-section"> Service </a>
+                  <a class="nav-link" href="{{ url_for('about') }}"> About </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
+                  <a class="nav-link" href="{{ url_for('index') }}"> Service </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('contact') }}">Contact us</a>
                 </li>
               </ul>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
             </div>
           </div>
         </nav>
@@ -98,7 +95,7 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="/static/images/about-img.png" alt="">
           </div>
         </div>
       </div>
@@ -114,76 +111,76 @@
         <div class="row p-1 ">
           <div class="col d-flex flex-row flex-wrap justify-content-around">
             <div class="card m-3 bg-dark text-white" style="width: 20rem;">
-              <img class="card-img-top" src="images\luffyOP.jpg" alt="Card image cap">
+              <img class="card-img-top about--height" src="/static/images/Aviral.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-danger">Aviral Katiyar</h5>
                 <p class="card-text">I am a passionate person eager to make a positive impact in the world through my skills and abilities.</p>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images\github.png" alt="git" class="social--icons">
+                <a href="https://github.com/maskboyAvi" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/github.png" alt="git" class="social--icons">
                 </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images/linkedin.png" alt="git" class="social--icons">
-                </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/facebook-circular-logo.png" alt="git" class="social--icons">
+                <a href="https://www.linkedin.com/in/aviral-katiyar-7b2209253/" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/linkedin.png" alt="git" class="social--icons">
                 </a>
                 <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/instagram.png" alt="git" class="social--icons">
+                  <img src="/static/images/facebook-circular-logo.png" alt="git" class="social--icons">
+                </a>
+                <a href="https://instagram.com/maskboy_avi?igshid=ZDc4ODBmNjlmNQ==" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
+                  <img src="/static/images/instagram.png" alt="git" class="social--icons">
                 </a>
               </div>
             </div>
             <div class="card m-3 bg-dark text-white" style="width: 20rem;">
-              <img class="card-img-top" src="images\luffyOP.jpg" alt="Card image cap">
+              <img class="card-img-top about--height" src="/static/images/Kash.jpeg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-danger">Kashish Garg</h5>
                 <p class="card-text">I am a determined person, constantly seeking personal growth and embracing new challenges to unlock my full potential.</p>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images\github.png" alt="git" class="social--icons">
+                <a href="https://github.com/Celebi07" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/github.png" alt="git" class="social--icons">
                 </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images/linkedin.png" alt="git" class="social--icons">
-                </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/facebook-circular-logo.png" alt="git" class="social--icons">
+                <a href="https://www.linkedin.com/in/kashish-garg-5593721b3" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/linkedin.png" alt="git" class="social--icons">
                 </a>
                 <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/instagram.png" alt="git" class="social--icons">
+                  <img src="/static/images/facebook-circular-logo.png" alt="git" class="social--icons">
+                </a>
+                <a href="https://instagram.com/vishi__03?igshid=MzNlNGNkZWQ4Mg==" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
+                  <img src="/static/images/instagram.png" alt="git" class="social--icons">
                 </a>
               </div>
             </div><div class="card m-3 bg-dark text-white" style="width: 20rem;">
-              <img class="card-img-top" src="images\luffyOP.jpg" alt="Card image cap">
+              <img class="card-img-top about--height" src="/static/images/Ayush.jpeg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-danger">Ayush Gupta</h5>
                 <p class="card-text">I am a creative problem solver with a passion for design and a keen eye for detail, striving to bring innovative and visually compelling solutions to every project</p>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images\github.png" alt="git" class="social--icons">
+                <a href="https://github.com/Ayushlion8" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/github.png" alt="git" class="social--icons">
                 </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images/linkedin.png" alt="git" class="social--icons">
-                </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/facebook-circular-logo.png" alt="git" class="social--icons">
+                <a href="https://www.linkedin.com/in/ayush-gupta-ab71bb257/" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/linkedin.png" alt="git" class="social--icons">
                 </a>
                 <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/instagram.png" alt="git" class="social--icons">
+                  <img src="/static/images/facebook-circular-logo.png" alt="git" class="social--icons">
+                </a>
+                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
+                  <img src="/static/images/instagram.png" alt="git" class="social--icons">
                 </a>
               </div>
             </div><div class="card m-3 bg-dark text-white" style="width: 20rem;">
-              <img class="card-img-top" src="images\luffyOP.jpg" alt="Card image cap">
+              <img class="card-img-top about--height" src="/static/images/Trishika.jpeg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-danger">Trishika Bhattacharyya</h5>
                 <p class="card-text">I am a dedicated environmental advocate, working tirelessly to promote sustainable practices and inspire positive change for a greener and more eco-conscious future.</p>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images\github.png" alt="git" class="social--icons">
+                <a href="https://github.com/Trishikab" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/github.png" alt="git" class="social--icons">
                 </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
-                  <img src="images/linkedin.png" alt="git" class="social--icons">
-                </a>
-                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/facebook-circular-logo.png" alt="git" class="social--icons">
+                <a href="https://www.linkedin.com/in/trishika-bhattacharyya-938a54258" class="btn btn-danger p-1 mt-2 mb-2 mr-2">
+                  <img src="/static/images/linkedin.png" alt="git" class="social--icons">
                 </a>
                 <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
-                  <img src="images/instagram.png" alt="git" class="social--icons">
+                  <img src="/static/images/facebook-circular-logo.png" alt="git" class="social--icons">
+                </a>
+                <a href="#" class="btn btn-danger p-1 mt-2 mb-2 mr-2 ">
+                  <img src="/static/images/instagram.png" alt="git" class="social--icons">
                 </a>
               </div>
             </div>
@@ -205,16 +202,16 @@
       </div>
       <div class="box">
         <a href="" class="img-box">
-          <img src="images/location.png" alt="" class="img-1">
-          <img src="images/location-o.png" alt="" class="img-2">
+          <img src="/static/images/location.png" alt="" class="img-1">
+          <img src="/static/images/location-o.png" alt="" class="img-2">
         </a>
         <a href="" class="img-box">
-          <img src="images/call.png" alt="" class="img-1">
-          <img src="images/call-o.png" alt="" class="img-2">
+          <img src="/static/images/call.png" alt="" class="img-1">
+          <img src="/static/images/call-o.png" alt="" class="img-2">
         </a>
         <a href="" class="img-box">
-          <img src="images/envelope.png" alt="" class="img-1">
-          <img src="images/envelope-o.png" alt="" class="img-2">
+          <img src="/static/images/envelope.png" alt="" class="img-1">
+          <img src="/static/images/envelope-o.png" alt="" class="img-2">
         </a>
       </div>
     </div>
@@ -228,7 +225,7 @@
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
-      <a href="https://html.design/">&copy; Team : Celebi</a>
+      <a href="{{ url_for('index') }}">&copy; Team : Celebi</a>
     </p>
   </section>
   <!-- footer section -->

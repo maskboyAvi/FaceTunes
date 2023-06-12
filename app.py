@@ -17,6 +17,14 @@ def generate_frames_web():
 def index():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 @app.route('/new_page')
 def new_page():
     return render_template('new-page.html')
